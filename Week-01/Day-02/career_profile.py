@@ -23,5 +23,9 @@ def displayProfile(name, Age, currentCompany, yearsOfExperience, currentSalary, 
     print(f"Dream Role: {dreamRole}") 
     print(f"Salary Gap: {dreamSalary - currentSalary}")
     print(f"Need to {dreamSalary - currentSalary} to reach your goal.")
+    if dreamSalary - currentSalary > 0:
+        print(f"You need {dreamSalary - currentSalary} LPA more annually to reach your goal.")
+    else:
+        print(f"You have already reached your dream salary of {dreamSalary}.")
 
 main();
